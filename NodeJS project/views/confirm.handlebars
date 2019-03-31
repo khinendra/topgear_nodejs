@@ -1,0 +1,9 @@
+{{#each student}}
+  <div class="card card-body mb-2">
+    <h4>{{firstName}} {{lastName}}</h4><label for="course">Course Enrolled : {{courseEnroll}}</label>
+    <p>Registration Date: {{registrationDate}}</p>
+    
+  </div>
+{{else}}
+  <p>No Registration found.</p>
+{{/each}}

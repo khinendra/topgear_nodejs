@@ -1,0 +1,31 @@
+<h2>Wipro School of Masters Studies</h2>
+{{#each errors}}
+  <div class="alert alert-danger">{{text}}</div>
+{{else}}
+
+{{/each}}
+
+<div class="card card-body">
+  <h3>Student Registration Form</h3>
+  <form action="/students" method="post">
+    <div class="form-group">
+      <label for="fname">First Name</label>
+      <input type="text" class="form-control" name="fname" required>
+    </div>
+    <div class="form-group">
+      <label for="lname">Last Name</label>
+      <input type="text" class="form-control" name="lname" required>
+    </div>
+    <div class="form-group">
+      <label for="course">Course to Register</label>
+      <select class="form-control" name="course">
+          <option>MCA</option>
+          <option>MBA</option>
+          <option>Masters in Social Stidies</option>
+          <option>PhD</option>
+      </select>
+        
+    </div>
+    <button type="submit" class="btn btn-primary">Submit</button>
+  </form>
+</div>
